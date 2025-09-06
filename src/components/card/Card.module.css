@@ -30,3 +30,9 @@ margin-top: 16px;
         height: 160px;
     }
 }
+
+@media (max-width: 1080px) {
+    .card {
+        width: 80%;
+    }
+}
