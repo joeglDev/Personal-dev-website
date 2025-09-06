@@ -8,8 +8,8 @@
 body[data-theme="dark"] {
   --background: #0a0a0a;
   --foreground: #ededed;
-  --primary: #55185d;
-  --secondary: #ffd524;
+  --primary: #5a347b;
+  --secondary: #556dc8;
 }
 
 html,
