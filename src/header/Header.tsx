@@ -1,11 +1,11 @@
-'use client'
-
-import {Switch} from "@/components";
+import {LightDarkModeToggle} from "@/header/LightDarkModeToggle";
 
 export const Header = () => {
+
+
     return (
         <header>
-            <Switch initialState={true} onToggleOn={() => null} onToggleOff={() => null}/>
+           <LightDarkModeToggle />
         </header>
     )
 }

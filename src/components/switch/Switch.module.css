@@ -11,7 +11,7 @@
     cursor: pointer;
     width: 100px;
     height: 50px;
-    background: grey;
+    background: var(--primary);
     border-radius: 100px;
     position: relative;
     transition: background-color .2s;
@@ -31,7 +31,7 @@
 }
 
 .react-switch-label-on {
-    background-color: #5B8C5A;
+    background-color: var(--primary);
 }
 
 .react-switch-checkbox:checked + .react-switch-label .react-switch-button {
