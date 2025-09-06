@@ -1,12 +1,10 @@
-import {LightDarkModeToggle} from "@/header/LightDarkModeToggle";
-import styles from './Header.module.css';
+import { LightDarkModeToggle } from "@/header/LightDarkModeToggle";
+import styles from "./Header.module.css";
 
 export const Header = () => {
-
-
-    return (
-        <header className={styles.horizontalFlexBox}>
-           <LightDarkModeToggle />
-        </header>
-    )
-}
+  return (
+    <header className={styles.horizontalFlexBox}>
+      <LightDarkModeToggle />
+    </header>
+  );
+};
