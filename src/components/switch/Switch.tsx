@@ -7,17 +7,14 @@ interface SwitchProps {
   initialState: boolean;
   onToggleOn: () => void;
   onToggleOff: () => void;
+  name: string;
 }
 
-/*
-test - initial state on / off
-test - can toggle
-test - can call on toggle on change
- */
 export const Switch = ({
   initialState,
   onToggleOn,
   onToggleOff,
+    name
 }: SwitchProps) => {
   const [isChecked, setIsChecked] = useState(initialState);
   const labelRef = useRef<HTMLLabelElement>(null);
@@ -45,6 +42,7 @@ export const Switch = ({
         className={styles["react-switch-checkbox"]}
         type="checkbox"
         id={`react-switch-new`}
+        role='checkbox'
       />
       <label
         ref={labelRef}
@@ -52,7 +50,7 @@ export const Switch = ({
         htmlFor={`react-switch-new`}
         tabIndex={0}
         onKeyDown={(e) => onKeyDown(e as unknown as KeyboardEvent)}
-        aria-label={"toggle light and dark mode"}
+        aria-label={name}
         aria-keyshortcuts={"Enter"}
       >
         <span className={styles["react-switch-button"]} />
