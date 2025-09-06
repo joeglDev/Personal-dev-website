@@ -25,7 +25,7 @@ describe('<Switch />', () => {
     })
 
     test('can pass initial state off', () => {
-        const {getByRole, mockOnToggleOffChange, mockOnToggleOnChange} = renderTest(false);
+        const {getByRole} = renderTest(false);
 
         expect(getByRole('checkbox')).toBeInTheDocument();
         expect(getByRole('checkbox')).not.toBeChecked();
