@@ -1,4 +1,4 @@
-import {Cards} from './Cards';
+import {Cards} from './libs';
 import styles from './Competencies.module.css';
 
 export const Competencies = () => {

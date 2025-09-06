@@ -1,5 +1,5 @@
 import {Card} from "@/components";
-import styles from './Competencies.module.css';
+import styles from '../../Competencies.module.css';
 
 export const Cards = () => {
     const competencies = [

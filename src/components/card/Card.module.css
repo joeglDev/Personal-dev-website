@@ -6,7 +6,7 @@
     text-align: center;
     height: 150px;
     width: 20%;
-    background-color: var(--background)
+    background-color: var(--background);
 }
 
 /* On mouse-over, add a deeper shadow */
