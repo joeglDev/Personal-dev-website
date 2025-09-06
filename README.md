@@ -6,6 +6,8 @@ This is a personal website to showcase my skills as a developer and to act as a 
 
 ## Getting Started
 
+All yarn commands can be found in the package.json file.
+
 First, run the development server:
 
 ```bash
@@ -34,3 +36,5 @@ To learn more about Next.js, take a look at the following resources:
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
 ## Running tests
+
+Run unit tests written in react-jesting-library and jest using the cli command `yarn test`.
