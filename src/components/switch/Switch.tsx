@@ -14,7 +14,7 @@ export const Switch = ({
   initialState,
   onToggleOn,
   onToggleOff,
-    name
+  name,
 }: SwitchProps) => {
   const [isChecked, setIsChecked] = useState(initialState);
   const labelRef = useRef<HTMLLabelElement>(null);
@@ -42,7 +42,7 @@ export const Switch = ({
         className={styles["react-switch-checkbox"]}
         type="checkbox"
         id={`react-switch-new`}
-        role='checkbox'
+        role="checkbox"
       />
       <label
         ref={labelRef}

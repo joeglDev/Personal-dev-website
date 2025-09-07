@@ -8,6 +8,7 @@ export const LightDarkModeToggle = () => {
 
   return (
     <Switch
+      name="light dark mode toggle switch"
       initialState={true}
       onToggleOn={setLightMode}
       onToggleOff={setDarkMode}
