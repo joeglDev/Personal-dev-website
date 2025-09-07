@@ -7,7 +7,6 @@ import { TechnologyType } from "./technology-type";
 
 export const TechStack = () => {
   const [filterBy, setFilterBy] = useState(TechnologyType.All);
-  console.log(filterBy);
 
   /*
     Array of tech stack objects: image, type, label
