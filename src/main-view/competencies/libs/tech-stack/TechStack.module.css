@@ -20,15 +20,41 @@
   box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
 }
 
+.gridContainer {
+    max-width: 1200px;
+    margin: 32px auto;
+    padding: 20px;
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.gridItem {
+    background-color: var(--background);
+    padding: 16px;
+    text-align: center;
+    max-width: 160px;
+    max-height: 120px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.gridItem:hover {
+    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
+}
+
 /* media queries for smaller screens */
 @media (max-width: 768px) {
   .horizontalFlexBox {
     max-width: 100%;
   }
+
+    .gridContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 1080px) {
   .horizontalFlexBox {
-    max-width: 45%;
+    max-width: 100%;
   }
 }
