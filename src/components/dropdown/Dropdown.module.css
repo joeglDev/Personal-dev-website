@@ -1,0 +1,12 @@
+.dropdownSelect {
+  background-color: initial;
+  border: none;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+/* Dark theme styles */
+[data-theme="dark"] .dropdownSelect {
+  color: mediumpurple;
+}
