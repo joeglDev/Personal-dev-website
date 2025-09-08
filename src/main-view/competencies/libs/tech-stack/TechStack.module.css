@@ -21,35 +21,35 @@
 }
 
 .gridContainer {
-    max-width: 1200px;
-    margin: 32px auto;
-    padding: 20px;
-    display: grid;
-    gap: 32px;
-    grid-template-columns: repeat(4, 1fr);
-    list-style: none;
+  max-width: 1200px;
+  margin: 32px auto;
+  padding: 20px;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(4, 1fr);
+  list-style: none;
 }
 
 .gridItem {
-    background-color: var(--background);
-    padding: 16px;
-    text-align: center;
-    max-width: 160px;
-    max-height: 120px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    justify-content: center;
-    align-items: center;
+  background-color: var(--background);
+  padding: 16px;
+  text-align: center;
+  max-width: 160px;
+  max-height: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
 }
 
 [data-theme="dark"] .gridImage {
-    background-color: #ededed;
+  background-color: #ededed;
 }
 
 /* On mouse-over, add a deeper shadow */
 .gridItem:hover {
-    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* media queries for smaller screens */
@@ -58,9 +58,9 @@
     max-width: 100%;
   }
 
-    .gridContainer {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .gridContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 1080px) {
