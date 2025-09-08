@@ -5,6 +5,19 @@ import { Dropdown } from "@/components";
 import { Dispatch, SetStateAction, useState } from "react";
 import { TechnologyType } from "./technology-type";
 import {techItems} from './tech-items';
+import Image from "next/image";
+
+interface TechItemProps {
+    name: string;
+    path: string;
+}
+
+const TechItem = ({ name, path}: TechItemProps) => (
+    <li  className={styles.gridItem}>
+        <span>{name}</span>
+        <Image className={styles.gridImage} src={`/tech-stack-svgs/${path}`} height={64} width={64} alt={`${name} logo`}/>
+    </li>
+)
 
 export const TechStack = () => {
   const [filterBy, setFilterBy] = useState(TechnologyType.All);
@@ -27,13 +40,13 @@ export const TechStack = () => {
 
       </div>
 
-        <div className={styles.gridContainer}>
+        <ul className={styles.gridContainer}>
             {
                 techItems
                     .filter(({type}) => type === filterBy || filterBy === TechnologyType.All)
-                    .map(({name}, index) => <article className={styles.gridItem} key={index}>{name}</article>)
+                    .map(({name, path}, index) => <TechItem key={index} name={name} path={path ?? ''} />)
             }
-        </div>
+        </ul>
     </div>
   );
 };
