@@ -1,5 +1,10 @@
 import styles from "./Introduction.module.css";
+import Image from "next/image";
 
+// make text media appropriate
+// add image
+// footer media qieries
+// add hobbies
 export const Introduction = () => (
   <section className={styles.introductionContainer}>
     <div className={styles.horizontalFlexBox}>
@@ -8,5 +13,7 @@ export const Introduction = () => (
         and i&apos;m a full-stack developer based in North-West England.
       </p>
     </div>
+
+
   </section>
 );
