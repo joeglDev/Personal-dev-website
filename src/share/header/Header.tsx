@@ -1,4 +1,4 @@
-import { LightDarkModeToggle } from "@/header/LightDarkModeToggle";
+import { LightDarkModeToggle } from "@/share/header/LightDarkModeToggle";
 import styles from "./Header.module.css";
 
 export const Header = () => {

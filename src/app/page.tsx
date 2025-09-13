@@ -1,4 +1,4 @@
-import { Header } from "@/header";
+import { Header } from "@/share";
 import { Competencies } from "@/main-view/competencies";
 
 export default function Home() {
