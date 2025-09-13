@@ -4,6 +4,7 @@
   --primary: #5b8c5a;
   --secondary: #e28e4c;
     --header-font-size-large: 2.5rem;
+    --header-font-size-medium: 2rem;
 }
 
 body[data-theme="dark"] {
