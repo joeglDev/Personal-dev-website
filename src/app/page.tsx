@@ -1,4 +1,4 @@
-import { Header } from "@/header";
+import { Header, Footer } from "@/share";
 import { Competencies } from "@/main-view/competencies";
 
 export default function Home() {
@@ -6,6 +6,7 @@ export default function Home() {
     <>
       <Header />
       <Competencies />
+      <Footer />
     </>
   );
 }
