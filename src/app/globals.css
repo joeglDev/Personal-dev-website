@@ -3,6 +3,7 @@
   --foreground: #171717;
   --primary: #5b8c5a;
   --secondary: #e28e4c;
+    --header-font-size-large: 2.5rem;
 }
 
 body[data-theme="dark"] {

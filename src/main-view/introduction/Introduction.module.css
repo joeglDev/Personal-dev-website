@@ -11,10 +11,27 @@
 }
 
 .introductionTitle {
-  font-size: 2.5rem;
+  font-size: var(--header-font-size-large);
 }
 
 .horizontalFlexBox {
   display: flex;
   flex-direction: column;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    .introductionContainer{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .introductionText {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .introductionTitle {
+        font-size: 2rem;
+    }
 }
