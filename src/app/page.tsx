@@ -1,4 +1,4 @@
-import { Competencies } from "@/main-view/competencies";
+import { Competencies, Introduction } from "@/main-view/competencies";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
+      <Introduction />
       <Competencies />
     </>
   );
