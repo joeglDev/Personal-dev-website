@@ -1,0 +1,27 @@
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  align-items: flex-end;
+  justify-content: end;
+  padding: 16px 16px;
+  background-color: var(--primary);
+}
+
+.iconContainer {
+  display: inline-block;
+  overflow: hidden;
+  color: var(--background);
+}
+
+.iconContainer:hover {
+  scale: 1.2;
+}
+
+[data-theme="dark"] .iconContainer {
+  color: var(--foreground);
+}
+
+.icon {
+  margin-top: 1.5rem;
+}
