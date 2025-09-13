@@ -25,3 +25,12 @@
 .icon {
   margin-top: 1.5rem;
 }
+
+.footerText {
+    color: var(--background);
+    font-size: 2rem;
+}
+
+[data-theme="dark"] .footerText {
+    color: var(--foreground);
+}

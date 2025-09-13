@@ -5,6 +5,7 @@ import styles from "./Footer.module.css";
 
 export const Footer = () => (
   <footer className={styles.footerContainer}>
+      <p className={styles.footerText}>Lets connect!</p>
     <a
       href="https://www.linkedin.com/in/joegilbertdev/"
       target="_blank"
