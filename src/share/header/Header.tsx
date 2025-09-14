@@ -5,7 +5,7 @@ import { Navigation } from "./Navigation";
 export const Header = () => {
   return (
     <header className={styles.horizontalFlexBox}>
-      <Navigation/>
+      <Navigation />
       <LightDarkModeToggle />
     </header>
   );
