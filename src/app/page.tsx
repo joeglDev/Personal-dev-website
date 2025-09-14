@@ -1,4 +1,4 @@
-import { Competencies, Introduction } from "@/main-view/competencies";
+import { Competencies, Introduction } from "@/main-view";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
