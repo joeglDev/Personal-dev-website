@@ -27,10 +27,10 @@
 }
 
 .footerText {
-    color: var(--background);
-    font-size: 2rem;
+  color: var(--background);
+  font-size: 2rem;
 }
 
 [data-theme="dark"] .footerText {
-    color: var(--foreground);
+  color: var(--foreground);
 }
