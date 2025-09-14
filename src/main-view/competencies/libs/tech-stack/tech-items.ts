@@ -44,6 +44,11 @@ export const techItems = [
     name: "MSSQL",
     path: "sql.svg",
   },
+    {
+        type: "Back end",
+        name: "PySpark",
+        path: "spark.svg",
+    },
   {
     type: "GenAI",
     name: "Ollama",
@@ -88,5 +93,5 @@ export const techItems = [
     type: "Front end",
     name: "Cypress",
     path: "cypress.svg",
-  },
+  }
 ];
