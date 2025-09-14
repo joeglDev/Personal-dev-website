@@ -1,0 +1,11 @@
+.perlinNoiseTitle {
+  text-align: center;
+  font-size: 2.5rem; /* Todo: move to a css variable */
+  margin: 16px 0;
+}
+
+.underCostructionContainer {
+  text-align: center;
+  font-size: 2rem;
+  margin: 16px 0;
+}

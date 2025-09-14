@@ -7,3 +7,26 @@
   padding: 16px 16px;
   background-color: var(--secondary);
 }
+
+.navFlexBox {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: start;
+}
+
+.navLink {
+  color: var(--background);
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 4px;
+}
+
+.navLink:hover {
+  scale: 1.2;
+}
+
+[data-theme="dark"].navLink {
+  color: var(--foreground);
+}
