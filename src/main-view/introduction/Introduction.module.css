@@ -1,0 +1,60 @@
+.introductionContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 180px;
+  padding: 16px;
+  margin: 16px 0 0 0;
+  background-color: var(--primary);
+  color: var(--background);
+}
+
+[data-theme="dark"] .introductionContainer {
+  color: var(--foreground);
+}
+
+.introductionText {
+  font-size: 2rem;
+}
+
+.introductionTitle {
+  font-size: var(--header-font-size-large);
+}
+
+.verticalFlexBox {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .introductionContainer {
+    flex-direction: column;
+    text-align: center;
+      gap: 16px;
+  }
+
+  .introductionText {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .introductionTitle {
+    font-size: 2rem;
+  }
+
+    .introductionText {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 1080px) {
+    .introductionTitle {
+        font-size: 2rem;
+    }
+
+    .introductionText {
+        font-size: 1.5rem;
+    }
+}
+

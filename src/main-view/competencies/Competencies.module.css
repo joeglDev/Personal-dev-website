@@ -6,12 +6,13 @@
   padding: 16px 16px;
   justify-content: space-between;
   gap: 16px;
-  background-color: var(--primary);
+  background-color: var(--secondary);
 }
 
 .h2 {
   text-align: center;
   margin: 32px;
+  font-size: var(--header-font-size-medium);
 }
 
 /* Mobile-specific styles */
