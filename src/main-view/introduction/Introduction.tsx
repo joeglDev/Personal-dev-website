@@ -19,7 +19,9 @@ export const Introduction = () => {
         quality={100}
         width={800}
         height={600}
-        style={{ margin: "auto", borderRadius: "10%" }}
+        style={{ margin: "auto", borderRadius: "10%", maxHeight: "600px", maxWidth: "800px" }}
+        layout="responsive"
+        sizes="(max-width: 768px) 100vw, (max-width: 1080px) 100vw,  20vw"
       />
     </section>
   );

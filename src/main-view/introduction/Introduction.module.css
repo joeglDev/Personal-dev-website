@@ -31,6 +31,7 @@
   .introductionContainer {
     flex-direction: column;
     text-align: center;
+      gap: 16px;
   }
 
   .introductionText {
@@ -41,4 +42,19 @@
   .introductionTitle {
     font-size: 2rem;
   }
+
+    .introductionText {
+        font-size: 1.5rem;
+    }
 }
+
+@media (max-width: 1080px) {
+    .introductionTitle {
+        font-size: 2rem;
+    }
+
+    .introductionText {
+        font-size: 1.5rem;
+    }
+}
+
