@@ -1,7 +1,7 @@
 .introductionContainer {
   display: flex;
   flex-direction: row;
-  gap: 16px;
+  gap: 180px;
   padding: 16px;
   margin: 16px 0 0 0;
 }
@@ -14,9 +14,10 @@
   font-size: var(--header-font-size-large);
 }
 
-.horizontalFlexBox {
+.verticalFlexBox {
   display: flex;
   flex-direction: column;
+    gap: 16px;
 }
 
 /* Mobile-specific styles */
