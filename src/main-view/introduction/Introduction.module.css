@@ -4,6 +4,12 @@
   gap: 180px;
   padding: 16px;
   margin: 16px 0 0 0;
+  background-color: var(--primary);
+  color: var(--background);
+}
+
+[data-theme="dark"] .introductionContainer {
+  color: var(--foreground);
 }
 
 .introductionText {
@@ -17,7 +23,7 @@
 .verticalFlexBox {
   display: flex;
   flex-direction: column;
-    gap: 16px;
+  gap: 16px;
 }
 
 /* Mobile-specific styles */
