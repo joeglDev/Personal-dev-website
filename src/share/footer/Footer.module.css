@@ -37,11 +37,11 @@
 
 /* Mobile-specific styles */
 @media (max-width: 768px) {
-    .footerText {
-        font-size: 1.5rem;
-    }
+  .footerText {
+    font-size: 1.5rem;
+  }
 
-    .footerContainer {
-        gap: 16px;
-    }
+  .footerContainer {
+    gap: 16px;
+  }
 }

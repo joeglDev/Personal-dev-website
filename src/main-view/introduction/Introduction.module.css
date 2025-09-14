@@ -21,17 +21,17 @@
 
 /* Mobile-specific styles */
 @media (max-width: 768px) {
-    .introductionContainer{
-        flex-direction: column;
-        text-align: center;
-    }
+  .introductionContainer {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .introductionText {
-        font-size: 1rem;
-        text-align: left;
-    }
+  .introductionText {
+    font-size: 1rem;
+    text-align: left;
+  }
 
-    .introductionTitle {
-        font-size: 2rem;
-    }
+  .introductionTitle {
+    font-size: 2rem;
+  }
 }
