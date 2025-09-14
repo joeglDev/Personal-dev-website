@@ -27,6 +27,6 @@
   scale: 1.2;
 }
 
-[data-theme="dark"].navLink {
+[data-theme="dark"] .navLink {
   color: var(--foreground);
 }
