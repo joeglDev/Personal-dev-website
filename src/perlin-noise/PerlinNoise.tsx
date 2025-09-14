@@ -4,9 +4,9 @@ export const PerlinNoise = () => (
   <>
     <h1 className={styles.perlinNoiseTitle}>Perlin noise demo</h1>
     {/* TODO: remove under construction */}
-    <div className={styles.underCostructionContainer}>
+    <div className={styles.underConstructionContainer}>
       <p>⚠️</p>
-      <p>This page is under constuction. Please check back soon.</p>
+      <p>This page is under construction. Please check back soon.</p>
     </div>
   </>
 );
