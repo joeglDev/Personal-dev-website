@@ -1,5 +1,5 @@
 .container {
-  margin: 32px 0;
+  margin: var(--content-seperator-height) 0;
   padding: 16px;
   background-color: var(--primary);
 }
@@ -22,7 +22,7 @@
 
 .gridContainer {
   max-width: 1200px;
-  margin: 32px auto;
+  margin: var(--content-seperator-height) auto;
   padding: 20px;
   display: grid;
   gap: 32px;
