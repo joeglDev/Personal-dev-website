@@ -38,6 +38,10 @@
   gap: 16px;
 }
 
+.content:hover {
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
+}
+
 /* Left side positioning */
 .containerLeft .content {
   margin-left: 55%;
@@ -52,4 +56,23 @@
   text-align: center;
   margin: 16px 0;
   font-size: var(--header-font-size-medium);
+}
+
+.timelineItemHeading {
+  text-align: center;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .timelineItemHeading {
+    font-size: 1rem;
+  }
+
+  .content {
+    padding: 4px;
+  }
+
+  .timelineContent {
+    font-size: 0.8rem;
+  }
 }

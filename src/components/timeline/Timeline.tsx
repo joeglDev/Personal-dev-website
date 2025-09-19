@@ -9,8 +9,8 @@ const TimelineItem = (props: TimelineItemProps) => {
       className={index % 2 ? styles.containerLeft : styles.containerRight}
     >
       <div className={styles.content}>
-        <h3>{title}</h3>
-        <p>{content}</p>
+        <h3 className={styles.timelineItemHeading}>{title}</h3>
+        <p className={styles.timelineContent}>{content}</p>
       </div>
     </article>
   );

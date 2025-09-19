@@ -1,9 +1,6 @@
 import { Timeline } from "@/components/timeline/Timeline";
 import styles from "./CareerHistory.module.css";
 
-// fix dark mode
-//fix responsveness
-
 export const CareerHistory = () => {
   const timelineItems = [
     {
