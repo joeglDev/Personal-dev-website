@@ -7,10 +7,10 @@
   height: 150px;
   width: 20%;
   background-color: var(--background);
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
 }
 
 /* On mouse-over, add a deeper shadow */
