@@ -5,8 +5,8 @@ export const Competencies = () => {
   return (
     <>
       <h2 className={styles.h2}>Skills and competencies</h2>
-      <Cards />
       <TechStack />
+      <Cards />
     </>
   );
 };

@@ -1,0 +1,103 @@
+/* Main timeline container */
+.timeline {
+  position: relative;
+  margin: 32px 0;
+  background-color: var(--secondary);
+  padding: 16px;
+}
+
+/* Vertical line connecting timeline items */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 6px;
+  height: calc(100% - 32px);
+  background: var(--background);
+  transform: translateX(-50%);
+}
+
+/* Container for timeline items */
+.containerLeft,
+.containerRight {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+/* Content styling */
+.content {
+  width: calc(50% - 20px);
+  padding: 20px;
+  background: var(--background);
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  /* fade in on scroll */
+  opacity: 0;
+  transform: translateY(32px);
+  visibility: hidden;
+}
+
+.content-is-visible {
+  width: calc(50% - 20px);
+  padding: 20px;
+  background: var(--background);
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  /* fade in on scroll */
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity 0.6s ease-out,
+    transform 1.2s ease-out;
+  visibility: visible;
+  will-change: opacity, visibility;
+}
+
+.content-is-visible:hover {
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Left side positioning */
+.containerLeft .content-is-visible {
+  margin-left: 55%;
+}
+
+/* Right side positioning */
+.containerRight .content-is-visible {
+  margin-right: 55%;
+}
+
+.timelineTitle {
+  text-align: center;
+  margin: 16px 0;
+  font-size: var(--header-font-size-medium);
+}
+
+.timelineItemHeading {
+  text-align: center;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .timelineItemHeading {
+    font-size: 1rem;
+  }
+
+  .content-is-visible {
+    padding: 4px;
+  }
+
+  .timelineContent {
+    font-size: 12px;
+  }
+}

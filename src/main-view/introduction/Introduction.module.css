@@ -31,7 +31,7 @@
   .introductionContainer {
     flex-direction: column;
     text-align: center;
-      gap: 16px;
+    gap: 16px;
   }
 
   .introductionText {
@@ -43,18 +43,17 @@
     font-size: 2rem;
   }
 
-    .introductionText {
-        font-size: 1.5rem;
-    }
+  .introductionText {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 1080px) {
-    .introductionTitle {
-        font-size: 2rem;
-    }
+  .introductionTitle {
+    font-size: 2rem;
+  }
 
-    .introductionText {
-        font-size: 1.5rem;
-    }
+  .introductionText {
+    font-size: 1.5rem;
+  }
 }
-
