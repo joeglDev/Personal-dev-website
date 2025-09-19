@@ -35,9 +35,8 @@ export const TechStack = () => {
   return (
     <div className={styles.container}>
       <div className={styles.horizontalFlexBox}>
-        <p className={styles.text}>Filter my technology skills by: </p>
         <Dropdown
-          name="select to filter technologies by"
+          name="Filter skills by:"
           defaultValue={filterBy}
           setValue={setFilterBy as Dispatch<SetStateAction<string>>}
           options={Object.values(TechnologyType)}

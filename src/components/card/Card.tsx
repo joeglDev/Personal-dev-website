@@ -8,7 +8,7 @@ interface CardProps {
 export const Card = ({ title, textContent }: CardProps) => {
   return (
     <article className={styles.card}>
-      <h4 className={styles.title}>{title}</h4>
+      <h3 className={styles.title}>{title}</h3>
       <p className={styles.textContent}>{textContent}</p>
     </article>
   );
