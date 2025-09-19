@@ -1,0 +1,52 @@
+/* Main timeline container */
+.timeline {
+  position: relative;
+  margin: 32px 0;
+  background-color: var(--secondary);
+  padding: 16px;
+}
+
+/* Vertical line connecting timeline items */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 6px;
+  height: calc(100% - 32px);
+  background: var(--background);
+  transform: translateX(-50%);
+}
+
+/* Container for timeline items */
+.containerLeft,
+.containerRight {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+/* Content styling */
+.content {
+  width: calc(50% - 20px);
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Left side positioning */
+.containerLeft .content {
+  margin-left: 55%;
+}
+
+/* Right side positioning */
+.containerRight .content {
+  margin-right: 55%;
+}
+
+.timelineTitle {
+  text-align: center;
+  margin: 16px 0;
+  font-size: var(--header-font-size-medium);
+}

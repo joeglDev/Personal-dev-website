@@ -1,44 +1,35 @@
+import { Timeline } from "@/components/timeline/Timeline";
 import styles from "./CareerHistory.module.css";
 
+// todo add content
+// fix dark mode
+
+//fix responsveness
+
 export const CareerHistory = () => {
+  const timelineItems = [
+    {
+      title: "2024 - Present:  Moody's - Software engineer",
+      content: "",
+    },
+    {
+      title: "2023 - Moody's - Associate software engineer",
+      content: "",
+    },
+    {
+      title: "2020 - Amazon UK - Laboratory scientist",
+      content: "",
+    },
+    {
+      title: "2019 - MSci research placement - University of Manchester",
+      content: "",
+    },
+  ];
+
   return (
-    <>
-      <h2 className={styles.timelineTitle}>Career history</h2>
-
-      <section className={styles.timeline}>
-        <div className={styles.containerLeft}>
-          <div className={styles.content}>
-            <h3>Present</h3>
-            <p>Lorem ipsum..</p>
-          </div>
-        </div>
-        <div className={styles.containerRight}>
-          <div className={styles.content}>
-            <h3>2024 - Moody&apos;s - Software engineer</h3>
-            <p>Lorem ipsum..</p>
-          </div>
-        </div>
-
-        <div className={styles.containerLeft}>
-          <div className={styles.content}>
-            <h3>2023 - Moody&apos;s - Associate software engineer</h3>
-            <p>Lorem ipsum..</p>
-          </div>
-        </div>
-        <div className={styles.containerRight}>
-          <div className={styles.content}>
-            <h3>2020 - Amazon UK - Laboratory scientist</h3>
-            <p>Lorem ipsum..</p>
-          </div>
-        </div>
-
-        <div className={styles.containerLeft}>
-          <div className={styles.content}>
-            <h3>2019 - MSci research placement - University of Manchester</h3>
-            <p>Lorem ipsum..</p>
-          </div>
-        </div>
-      </section>
-    </>
+    <section>
+      <h2 className={styles.title}>Career history</h2>
+      <Timeline items={timelineItems} />
+    </section>
   );
 };
