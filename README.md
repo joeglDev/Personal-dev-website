@@ -4,6 +4,10 @@
 
 This is a personal website to showcase my skills as a developer and to act as a living CV. The tech stack is nextJS, TypeScript and css modules.
 
+## Deployment
+
+This application is deployed with Vercel.
+
 ## Getting Started
 
 All yarn commands can be found in the package.json file.
