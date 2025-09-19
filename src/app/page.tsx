@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <>
       <Introduction />
-      <Competencies />
       <CareerHistory />
+      <Competencies />
     </>
   );
 }
