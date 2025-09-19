@@ -1,37 +1,61 @@
-'use client'
+"use client";
 
-import { TimelineItemProps} from "./timeline.types";
+import { TimelineItemProps } from "./timeline.types";
 import styles from "./Timeline.module.css";
-import {useEffect, useRef, useState} from "react";
+import { useCallback, useEffect, useState } from "react";
 
 export const TimelineItem = (props: TimelineItemProps) => {
-    const [isVisible, setVisible] = useState(true);
-    const containerRef = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
+  const [wasRecentlyVisible, setWasRecentlyVisible] = useState(false);
+  const { index, title, content } = props;
 
-    const { index, title, content } = props;
-    const containerStyle = isVisible ? styles["content-is-visible"]: styles["content"];
+  const handleVisibilityChange = useCallback((node: HTMLDivElement | null) => {
+    if (!node) return;
 
-    useEffect(() => {
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => setVisible(entry.isIntersecting));
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+            setWasRecentlyVisible(true);
+          }
         });
-
-        if (containerRef.current) {
-            observer.observe(containerRef.current);
-            // eslint-disable-next-line react-hooks/exhaustive-deps
-            return () => observer.unobserve(containerRef.current as Element); // typecast necessary as otherwise complains may be null
-        }
-    }, []);
-
-    return (
-        <article
-            key={index}
-            className={index % 2 ? styles.containerLeft : styles.containerRight}
-        >
-            <div ref={containerRef} className={containerStyle}>
-                <h3 className={styles.timelineItemHeading}>{title}</h3>
-                <p className={styles.timelineContent}>{content}</p>
-            </div>
-        </article>
+      },
+      {
+        threshold: 0.1, // Lower threshold reduces flicker
+        rootMargin: "50px", // Adds buffer zone
+      },
     );
+
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    let timeoutId: NodeJS.Timeout;
+
+    if (wasRecentlyVisible && !isVisible) {
+      timeoutId = setTimeout(() => {
+        setIsVisible(false);
+      }, 150); // Short delay to prevent rapid toggling
+    }
+
+    return () => clearTimeout(timeoutId);
+  }, [isVisible, wasRecentlyVisible]);
+
+  const containerStyle = isVisible
+    ? styles["content-is-visible"]
+    : styles["content"];
+
+  return (
+    <article
+      key={index}
+      className={index % 2 ? styles.containerLeft : styles.containerRight}
+    >
+      <div ref={handleVisibilityChange} className={containerStyle}>
+        <h3 className={styles.timelineItemHeading}>{title}</h3>
+        <p className={styles.timelineContent}>{content}</p>
+      </div>
+    </article>
+  );
 };
