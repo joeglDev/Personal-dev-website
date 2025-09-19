@@ -15,17 +15,20 @@ export const Dropdown = ({
   options,
 }: DropdownProps) => (
   <>
-    <select
-      className={styles.dropdownSelect}
-      name={name}
-      defaultValue={defaultValue}
-      onChange={(e) => setValue(e.target.value)}
-    >
-      {options.map((option, index) => (
-        <option className={styles.dropdownOption} key={index} value={option}>
-          {option}
-        </option>
-      ))}
-    </select>
+    <label className={styles.dropdownLabel}>
+      {name}
+      <select
+        className={styles.dropdownSelect}
+        name={name}
+        defaultValue={defaultValue}
+        onChange={(e) => setValue(e.target.value)}
+      >
+        {options.map((option, index) => (
+          <option className={styles.dropdownOption} key={index} value={option}>
+            {option}
+          </option>
+        ))}
+      </select>
+    </label>
   </>
 );
