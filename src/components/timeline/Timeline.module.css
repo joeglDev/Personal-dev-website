@@ -1,7 +1,7 @@
 /* Main timeline container */
 .timeline {
   position: relative;
-  margin: 32px 0;
+  margin: var(--content-seperator-height) 0;
   background-color: var(--secondary);
   padding: 16px;
 }
@@ -12,7 +12,7 @@
   position: absolute;
   left: 50%;
   width: 6px;
-  height: calc(100% - 32px);
+  height: calc(100% - var(--content-seperator-height));
   background: var(--background);
   transform: translateX(-50%);
 }

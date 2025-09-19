@@ -1,5 +1,5 @@
 .horizontalFlexContainer {
-  margin: 32px 0 32px 0;
+  margin: var(--content-seperator-height) 0;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -11,7 +11,7 @@
 
 .h2 {
   text-align: center;
-  margin: 32px;
+  margin: var(--content-seperator-height);
   font-size: var(--header-font-size-medium);
 }
 

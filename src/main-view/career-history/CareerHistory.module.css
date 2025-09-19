@@ -1,5 +1,5 @@
 .title {
   text-align: center;
   font-size: var(--header-font-size-medium);
-  margin: 32px 0;
+  margin: var(--content-seperator-height) 0;
 }

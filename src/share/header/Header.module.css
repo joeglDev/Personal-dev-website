@@ -6,6 +6,7 @@
   justify-content: space-between;
   padding: 16px 16px;
   background-color: var(--secondary);
+  margin-bottom: var(--content-seperator-height);
 }
 
 .navFlexBox {

@@ -5,6 +5,7 @@
   --secondary: #e28e4c;
   --header-font-size-large: 2.5rem;
   --header-font-size-medium: 2rem;
+  --content-seperator-height: 32px;
 }
 
 body[data-theme="dark"] {
