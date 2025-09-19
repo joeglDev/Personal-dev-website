@@ -4,9 +4,9 @@ type TimelineItem = {
 };
 
 export interface TimelineItemProps extends TimelineItem {
-    index: number;
+  index: number;
 }
 
 export interface TimelineProps {
-    items: TimelineItem[];
+  items: TimelineItem[];
 }
