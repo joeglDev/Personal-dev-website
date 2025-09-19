@@ -1,20 +1,6 @@
-import { TimelineItemProps, TimelineProps } from "./timeline.types";
+import { TimelineProps } from "./timeline.types";
 import styles from "./Timeline.module.css";
-
-const TimelineItem = (props: TimelineItemProps) => {
-  const { index, title, content } = props;
-  return (
-    <article
-      key={index}
-      className={index % 2 ? styles.containerLeft : styles.containerRight}
-    >
-      <div className={styles.content}>
-        <h3 className={styles.timelineItemHeading}>{title}</h3>
-        <p className={styles.timelineContent}>{content}</p>
-      </div>
-    </article>
-  );
-};
+import {TimelineItem} from "@/components/timeline/TimelineItem";
 
 export const Timeline = ({ items }: TimelineProps) => {
   return (
