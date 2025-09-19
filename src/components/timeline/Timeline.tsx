@@ -1,6 +1,6 @@
 import { TimelineProps } from "./timeline.types";
 import styles from "./Timeline.module.css";
-import { TimelineItem } from "@/components/timeline/TimelineItem";
+import { TimelineItem } from "./TimelineItem";
 
 export const Timeline = ({ items }: TimelineProps) => {
   return (
