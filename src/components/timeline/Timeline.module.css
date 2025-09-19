@@ -30,9 +30,12 @@
 .content {
   width: calc(50% - 20px);
   padding: 20px;
-  background: white;
+  background: var(--background);
   border-radius: 8px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 /* Left side positioning */
