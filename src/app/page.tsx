@@ -1,4 +1,4 @@
-import { Competencies, Introduction, Timeline } from "@/main-view";
+import { CareerHistory, Competencies, Introduction } from "@/main-view";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <Introduction />
       <Competencies />
-      <Timeline />
+      <CareerHistory />
     </>
   );
 }

@@ -1,6 +1,6 @@
-import styles from "./Timeline.module.css";
+import styles from "./CareerHistory.module.css";
 
-export const Timeline = () => {
+export const CareerHistory = () => {
   return (
     <>
       <h2 className={styles.timelineTitle}>Career history</h2>
