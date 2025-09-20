@@ -6,7 +6,7 @@ This is a personal website to showcase my skills as a developer and to act as a 
 
 ## Deployment
 
-This application is deployed with Vercel at: http://personal-dev-website-steel.vercel.app/
+This application is deployed with Vercel at: http://personal-dev-website-steel.vercel.app/ or https://joe-gilbert-developer.xyz/
 
 ## Getting Started
 
