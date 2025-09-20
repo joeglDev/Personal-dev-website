@@ -11,7 +11,8 @@ export const Introduction = () => {
         <p className={styles.introductionText}>
           A full-stack developer based in North-West England.
         </p>
-        <p className={styles.introductionText}>Busy with 🪴 | 🐈‍⬛ | 💻</p>
+        <p className={styles.introductionText}>CV available on request.</p>
+        <p className={styles.introductionText}>Busy with 🪴 | 🐈 🐈‍⬛ | 💻</p>
       </div>
       <Image
         src="/images/me.jpg"
