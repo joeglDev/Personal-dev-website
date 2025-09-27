@@ -1,97 +1,119 @@
+import { TechnologyType } from "./technology-type";
+
 export const techItems = [
   {
-    type: "Languages",
+    type: TechnologyType.Languages,
     name: "JavaScript",
     path: "js.svg",
   },
   {
-    type: "Languages",
+    type: TechnologyType.Languages,
     name: "TypeScript",
     path: "ts.svg",
   },
   {
-    type: "Languages",
+    type: TechnologyType.Languages,
     name: "CSS",
     path: "css.svg",
   },
   {
-    type: "Languages",
+    type: TechnologyType.Languages,
     name: "HTML5",
     path: "html.svg",
   },
   {
-    type: "Languages",
+    type: TechnologyType.Languages,
     name: "Python",
     path: "python.svg",
   },
   {
-    type: "Languages",
+    type: TechnologyType.Languages,
     name: "C#",
     path: "csharp.svg",
   },
   {
-    type: "Back end",
+    type: TechnologyType.BackEnd,
     name: "Azure Databricks",
     path: "databricks.svg",
   },
   {
-    type: "Back end",
+    type: TechnologyType.BackEnd,
     name: "dotNet",
     path: "dotnet.svg",
   },
   {
-    type: "Back end",
+    type: TechnologyType.BackEnd,
     name: "MSSQL",
     path: "sql.svg",
   },
   {
-    type: "Back end",
+    type: TechnologyType.BackEnd,
     name: "PySpark",
     path: "spark.svg",
   },
   {
-    type: "GenAI",
+    type: TechnologyType.GenAI,
     name: "Ollama",
     path: "llama.svg",
   },
   {
-    type: "GenAI",
+    type: TechnologyType.GenAI,
     name: "Microsoft Copilot",
     path: "ai.svg",
   },
   {
-    type: "GenAI",
+    type: TechnologyType.GenAI,
     name: "LangChain",
     path: "parrot.svg",
   },
   {
-    type: "GenAI",
+    type: TechnologyType.GenAI,
     name: "LangSmith",
     path: "parrot.svg",
   },
   {
-    type: "Front end",
+    type: TechnologyType.FrontEnd,
     name: "NextJs",
     path: "nextjs.svg",
   },
   {
-    type: "Front end",
+    type: TechnologyType.FrontEnd,
     name: "React",
     path: "react.svg",
   },
   {
-    type: "Front end",
+    type: TechnologyType.FrontEnd,
     name: "Jest",
     path: "jest.svg",
   },
   {
-    type: "Front end",
+    type: TechnologyType.FrontEnd,
     name: "Playwright",
     path: "playwright.svg",
   },
   {
-    type: "Front end",
+    type: TechnologyType.FrontEnd,
     name: "Cypress",
     path: "cypress.svg",
+  },
+  {
+    type: TechnologyType.ContinuousIntegration,
+    name: "Github",
+    path: "github.svg",
+  },
+  {
+    type: TechnologyType.ContinuousIntegration,
+    name: "Azure dev ops",
+    path: "ado.svg",
+  },
+  {
+    type: TechnologyType.ContinuousIntegration,
+    name: "YAML",
+    path: "yaml.svg",
+  },
+  {
+    type: TechnologyType.ContinuousIntegration,
+    name: "Datadog",
+    path: "datadog.svg",
   },
 ];

@@ -12,7 +12,7 @@
   justify-content: flex-start;
   padding: 16px;
   background-color: var(--background);
-  max-width: 15%;
+  max-width: 22.5%;
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -54,10 +54,6 @@
 
 /* media queries for smaller screens */
 @media (max-width: 768px) {
-  .horizontalFlexBox {
-    max-width: 100%;
-  }
-
   .gridContainer {
     grid-template-columns: repeat(2, 1fr);
   }
