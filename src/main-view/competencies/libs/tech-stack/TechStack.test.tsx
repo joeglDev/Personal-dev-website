@@ -22,6 +22,9 @@ describe("<TechStack/>", () => {
 
     // languages
     expect(getByText("Python")).toBeInTheDocument();
+
+    // Continuous integration
+    expect(getByText("Datadog")).toBeInTheDocument();
   });
 
   test("can filter by 'GenAI'", async () => {
@@ -47,6 +50,9 @@ describe("<TechStack/>", () => {
 
     // languages
     expect(queryByText("Python")).not.toBeInTheDocument();
+
+    // Continuous integration
+    expect(queryByText("Datadog")).not.toBeInTheDocument();
   });
 
   test("can filter by 'Front end'", async () => {
@@ -72,6 +78,9 @@ describe("<TechStack/>", () => {
 
     // languages
     expect(queryByText("Python")).not.toBeInTheDocument();
+
+    // Continuous integration
+    expect(queryByText("Datadog")).not.toBeInTheDocument();
   });
 
   test("can filter by 'Back end'", async () => {
@@ -97,6 +106,9 @@ describe("<TechStack/>", () => {
 
     // languages
     expect(queryByText("Python")).not.toBeInTheDocument();
+
+    // Continuous integration
+    expect(queryByText("Datadog")).not.toBeInTheDocument();
   });
 
   test("can filter by 'Languages'", async () => {
@@ -122,5 +134,36 @@ describe("<TechStack/>", () => {
 
     // languages
     expect(getByText("Python")).toBeInTheDocument();
+
+    // Continuous integration
+    expect(queryByText("Datadog")).not.toBeInTheDocument();
+  });
+
+  test("can filter by 'Continuous integration'", async () => {
+    const user = userEvent.setup();
+    const { getByRole, getByText, queryByText } = render(<TechStack />);
+
+    const dropdown = getByRole("combobox");
+    expect(dropdown).toBeInTheDocument();
+    expect(dropdown).toHaveTextContent("All");
+
+    // click new option
+    await user.click(dropdown);
+    await user.selectOptions(getByRole("combobox"), "Continuous integration");
+
+    // genAI
+    expect(queryByText("Ollama")).not.toBeInTheDocument();
+
+    // Front end
+    expect(queryByText("React")).not.toBeInTheDocument();
+
+    // backend
+    expect(queryByText("dotNet")).not.toBeInTheDocument();
+
+    // languages
+    expect(queryByText("Python")).not.toBeInTheDocument();
+
+    // Continuous integration
+    expect(getByText("Datadog")).toBeInTheDocument();
   });
 });

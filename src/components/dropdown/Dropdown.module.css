@@ -17,3 +17,11 @@
 [data-theme="dark"] .dropdownSelect {
   color: mediumpurple;
 }
+
+/* media queries for smaller screens */
+@media (max-width: 768px) {
+  .dropdownLabel {
+    flex-direction: column;
+    align-content: flex-start;
+  }
+}
