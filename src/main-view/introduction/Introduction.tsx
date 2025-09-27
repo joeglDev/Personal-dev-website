@@ -28,6 +28,7 @@ export const Introduction = () => {
         }}
         layout="responsive"
         sizes="(max-width: 768px) 100vw, (max-width: 1080px) 100vw,  20vw"
+        priority={true}
       />
     </section>
   );
