@@ -8,7 +8,7 @@ describe("<Card/>", () => {
       <Card title={"title"} textContent={"textContent"} />,
     );
 
-    expect(getByText("titlehhhh")).toBeInTheDocument();
+    expect(getByText("title")).toBeInTheDocument();
     expect(getByText("textContent")).toBeInTheDocument();
   });
 });
