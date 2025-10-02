@@ -3,8 +3,8 @@ on:
   push:
     branches: ["feat/*", "tech/*", "fix/*"]
   pull_request:
-    types: [opened, synchronize, closed]
-    branches: ["feat/*", "tech/*", "fix/*", "main"]
+    types: [synchronize, closed]
+    branches: ["feat/*", "tech/*", "fix/*"]
 
 jobs:
   test:
