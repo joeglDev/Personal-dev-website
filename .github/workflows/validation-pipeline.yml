@@ -1,0 +1,33 @@
+name: Validation Pipeline
+on:
+  push:
+    branches: ["feat/*", "tech/*", "fix/*"]
+  pull_request:
+    branches: ["feat/*", "tech/*", "fix/*"]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [20]
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "npm"
+      - name: Install dependencies
+        run: yarn
+      - name: Run unit tests
+        run: yarn test
+      - name: Log Test Success
+        if: success()
+        run: |
+          echo "✅ Unit tests succeeded"
+      - name: Log Test Failure
+        if: failure()
+        run: |
+          echo "❌ Unit tests failed"
