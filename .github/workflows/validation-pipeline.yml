@@ -43,9 +43,7 @@ jobs:
           node-version: 20
           cache: "npm"
       - name: Install dependencies
-        run: yarn
-        # - name: Install Playwright Browsers
-        # run: yarn playwright install --with-deps
+        run: yarn && yarn playwright install --with-deps
       - name: Run Playwright e2e tests
         run: yarn e2e
       - uses: actions/upload-artifact@v4
