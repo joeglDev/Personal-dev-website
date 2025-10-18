@@ -1,5 +1,6 @@
 import styles from "./Introduction.module.css";
 import Image from "next/image";
+import { ExternalLink } from "@/components";
 
 export const Introduction = () => {
   const altText =
@@ -11,8 +12,21 @@ export const Introduction = () => {
         <p className={styles.introductionText}>
           A full-stack developer based in North-West England.
         </p>
-        <p className={styles.introductionText}>CV available on request.</p>
         <p className={styles.introductionText}>Busy with 🪴 | 🐈 🐈‍⬛ | 💻</p>
+        <br />
+        <p className={styles.introductionText}>
+          This website was created with TypeScript and NextJs. Check out the
+          sourcecode over on my{" "}
+          <span>
+            <ExternalLink
+              href="https://github.com/joeglDev/Personal-dev-website"
+              prefetch={false}
+            >
+              Github
+            </ExternalLink>
+          </span>
+          .
+        </p>
       </div>
       <Image
         src="/images/me.jpg"

@@ -1,0 +1,15 @@
+.externalLink {
+  font-weight: bold;
+  color: mediumblue;
+  text-decoration: underline;
+}
+
+.externalLinkClicked {
+  font-weight: bold;
+  color: var(--background);
+  text-decoration: underline;
+}
+
+[data-theme="dark"] .externalLinkClicked {
+  color: var(--foreground);
+}
