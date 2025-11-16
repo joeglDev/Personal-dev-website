@@ -116,4 +116,9 @@ export const techItems = [
     name: "Datadog",
     path: "datadog.svg",
   },
+    {
+        type: TechnologyType.GenAI,
+        name: "Cursor IDE",
+        path: "vs-code.svg",
+    },
 ];
