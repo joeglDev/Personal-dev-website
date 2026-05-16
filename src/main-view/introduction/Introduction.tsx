@@ -31,17 +31,19 @@ export const Introduction = () => {
       <Image
         src="/images/me.jpg"
         alt={altText}
+        loading="eager"
         quality={100}
         width={800}
         height={600}
         style={{
           margin: "auto",
           borderRadius: "10%",
+          width: "100%",
+          height: "auto",
           maxHeight: "600px",
           maxWidth: "800px",
         }}
-        layout="responsive"
-        sizes="(max-width: 768px) 100vw, (max-width: 1080px) 100vw,  20vw"
+        sizes="(max-width: 768px) 100vw, (max-width: 1080px) 100vw, 100vw"
         priority={true}
       />
     </section>

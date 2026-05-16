@@ -2,14 +2,14 @@
 
 import { TimelineItemProps } from "./timeline.types";
 import styles from "./Timeline.module.css";
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 export const TimelineItem = (props: TimelineItemProps) => {
   const [isVisible, setIsVisible] = useState(false);
   const [wasRecentlyVisible, setWasRecentlyVisible] = useState(false);
   const { index, title, content } = props;
 
-  const handleVisibilityChange = useCallback((node: HTMLDivElement | null) => {
+  const handleVisibilityChange = (node: HTMLDivElement | null) => {
     if (!node) return;
 
     const observer = new IntersectionObserver(
@@ -29,7 +29,7 @@ export const TimelineItem = (props: TimelineItemProps) => {
 
     observer.observe(node);
     return () => observer.disconnect();
-  }, []);
+  };
 
   useEffect(() => {
     let timeoutId: NodeJS.Timeout;
